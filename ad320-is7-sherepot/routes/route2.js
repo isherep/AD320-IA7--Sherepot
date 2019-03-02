@@ -3,9 +3,9 @@ var router = express.Router();
 
 var object = require('../colors.json');
 /*Get route1 page*/
-console.log(object);
+//console.log(object);
 
-router.get('/route2', function(req, res, next){
+router.get('/', function(req, res, next){
   res.send(object);
 });
 

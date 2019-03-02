@@ -9,7 +9,7 @@ var div = document.getElementById('main');
 // });
 
 //use ternary operator instead tomorrow
-function changeColor(style){
+function changeColor(){
   if(div.style.background === 'red'){
     div.style.background = 'green';
   }else{
