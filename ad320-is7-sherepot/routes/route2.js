@@ -3,14 +3,7 @@ var router = express.Router();
 
 var object = require('../colors.json');
 
-router.get('/', function(req, res, next){
-  res.send(object);
-});
-
-
-var colorParam;
-
-router.get('/:all',function(req, res, next){
+router.get('/all',function(req, res, next){
     res.send(object);
     
 });
@@ -22,7 +15,7 @@ router.get('/:color', function(req, res, next){
 function getColorByName(colorString){
     for(var i = 0; i<object.colors.length; i++){
           if (object.colors[i].color == colorString){
-                 return object.colors[i];
+                return object.colors[i];
        }
     }
 }
